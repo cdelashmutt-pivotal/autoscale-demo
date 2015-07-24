@@ -1,0 +1,9 @@
+---
+applications:
+- name: autoscale-demo
+  memory: 512M
+  instances: 1
+  host: slow-url
+  path: ./target/autoscale-demo-1.0-SNAPSHOT.war
+  env:
+   JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
